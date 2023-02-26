@@ -30,5 +30,8 @@ console.log(difference2);//{1}
 // const difference2 = new Set([...b].filter(x => !a.has(x)))
 //console.log(difference2);//{4}
 
-//WEAK SET 
-
+//WEAK SET
+// weak set not iterable
+// must you should an object not capable to add string or number or anything
+const ws = new WeakSet([{ a: 1 }, { b: 2 }])
+log(ws)//{{a:1},{b:2}}
